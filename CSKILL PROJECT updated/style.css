@@ -1,0 +1,348 @@
+/*#142850 (Darkest)
+#27496D
+#0C7B93
+#00A8CC (Lightest)
+#f8ff6b (Yellow)
+#000538(bgc)*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: #000538;
+}
+nav{
+    position: sticky;
+    top: 0; 
+    width: 100%;
+    background-color: #142850;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 20px 0 rgb(0, 0, 0,0.6);
+    z-index: 1;
+}  
+.name{
+    color: #4fdfff;
+    font-family: Great Vibes;
+    font-size: 45px;
+    margin-left: 60px;
+}
+.nav-buttons{
+   margin-right: 60px;
+}
+.nav-buttons a{
+    color: #00A8CC;
+    font-family: Poppins;
+    margin: 20px;
+    font-size: 22px;
+    text-decoration: none;
+}
+.nav-buttons a:hover{
+    color: #f8ff6b;
+    transition: all ease-in-out 0.2s;
+}
+.search-bar{
+    display: flex;
+}
+.search-bar input{
+    height: 30px;
+    border-radius: 50px;
+    padding: 15px;
+    font-size: 20px;
+    border: 3px solid #00A8CC;
+}
+.search-bar i{
+    color: #00A8CC;
+    font-size: 30px;
+    margin-left: 10px;
+}
+.search-bar i:hover{
+    cursor: pointer;
+    color: #f8ff6b;
+
+}
+.login-signup a{
+    color: #00A8CC;
+    font-family: Poppins;
+    margin: 20px;
+    font-size: 22px;
+    text-decoration: none;
+}
+.login-signup a:hover{
+    color: #f8ff6b;
+    transition: all ease-in-out 0.2s;
+}
+
+.less-more{
+  font-size: 100px;
+  background-image: linear-gradient(rgb(6, 0, 0),#000538 );
+}
+.less-more h1{
+  font-family: Chakra Petch;
+  line-height: 180px;
+  padding: 20px;
+  text-align: center;
+  color: #00c4e746 ;
+  
+}
+
+/* CSS for nav2 begins here */
+.nav2{
+    background-color: #fff;
+}
+ .nav2 ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    margin: 0 100px;
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 600;
+ }
+ .nav2 ul li{
+    padding: 10px 30px ;
+ }
+ .nav2 ul li:hover{
+    background-color:#f8ff6b;
+    cursor: pointer;
+    color: #142850;
+ }
+ /* end of nav2 */
+
+ .lessmore{
+  font-size: 100px;
+  background-image: linear-gradient(rgb(6, 0, 0),#000538 );
+  position: relative;
+  padding-top: 10px;
+  cursor:grabbing;
+}
+.lessmore h1{
+  font-family: Chakra Petch;
+  line-height: 180px;
+  padding: 20px;
+  text-align: center;
+  color: #00A8CC;
+}
+
+/* CODE OF ANIMATED SPHERE */
+#point{
+  background-color: #00A8CC;
+  mix-blend-mode: difference;
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  cursor: none;
+  animation-name: move;
+  animation-duration: 3s;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+@keyframes move  {
+  0%{
+    left: 0;
+  }
+  50%{
+    left: 100%;
+  }
+  100%{
+    left: 0;
+  }
+}
+/* ANIMATED SPHERE ENDS */
+
+ .new-release-section, .trending-section, .artists-section, .favorites-section{
+    padding: 20px;
+ }
+ .heading-1{
+    font-family: Poppins;
+    color: #00A8CC;
+ }
+ .new-release-cards, .trending-cards, .favorites-cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+ }
+ #cards-with-names p{
+  color: #00A8CC;
+  font-family: poppins;
+  text-align: center;
+ }
+ .artist-cards{
+   display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+ }
+ .artists{
+   background-size: cover;
+    background-position: center;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    height: 220px;
+    width: 220px;
+ }
+ .music-card {
+   background-size: cover;
+   background-position: center;
+   border: 2px solid rgb(0, 0, 0);
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+   border-radius: 20px;
+   height: 220px;
+   width: 220px;
+   transition: transform 0.3s ease, box-shadow 0.5s ease, width 0.5s ease;
+}
+
+.music-card:hover {
+   cursor: pointer;
+   transform: scale(1.2);
+   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8);
+}
+
+ .new-release-cards #card-1{
+   background-image: url(/projectimages/stree2.jpeg);
+ }
+ .new-release-cards #card-2{
+   background-image: url(/projectimages/bhoolbhulaiya.jpeg);
+ }
+ .new-release-cards #card-3{
+   background-image: url(/projectimages/aayi\ nai.jpeg);
+ }
+ .new-release-cards #card-4{
+   background-image: url(/projectimages/munjya.jpeg);
+ }
+ .new-release-cards #card-5{
+   background-image: url(/projectimages/chhaila.jpeg);
+ }
+ .new-release-cards #card-6{
+   background-image: url(/projectimages/jigra.jpeg);
+ }
+ .trending-cards #card-1{
+    background-image: url(/projectimages/remann.jpeg);
+ }
+ .trending-cards #card-2{
+   background-image: url(/projectimages/tumharehirahegehum.webp);
+}
+.trending-cards #card-3{
+   background-image: url(/projectimages/heerasamani.jpeg);
+}
+.trending-cards #card-4{
+   background-image: url(/projectimages/tainukhabarnahi.webp);
+}
+.trending-cards #card-5{
+   background-image: url(/projectimages/jotummereho.jpeg);
+}
+.trending-cards #card-6{
+   background-image: url(/projectimages/taubatauba.jpeg);
+}
+ .artist-cards #card-1{
+   background-image: url(/projectimages/pritam.jpeg);
+ }
+ .artist-cards #card-2{
+   background-image: url(/projectimages/shreyaghoshal.jpeg);
+ }
+ .artist-cards #card-3{
+   background-image: url(/projectimages/arijit.jpeg);
+ }
+ .artist-cards #card-4{
+   background-image: url(/projectimages/sunidhichauhan.jpeg);
+ }
+ .artist-cards #card-5{
+   background-image: url(/projectimages/darshanraval.jpeg);
+ }
+ .artist-cards #card-6{
+   background-image: url(/projectimages/diljit.jpeg);
+ }
+
+ .favorites-cards #card-1{
+    background-image: url(/projectimages/kaipoche.jpeg);
+ }
+ .favorites-cards #card-2{
+    background-image: url(/projectimages/fukrey.jpeg);
+ }
+ .favorites-cards #card-3{
+    background-image: url(/projectimages/yjhd.jpg);
+ }
+ .favorites-cards #card-4{
+    background-image: url(/projectimages/chhichore.jpeg);
+ }
+ .favorites-cards #card-5{
+    background-image: url(/projectimages/3idiots.jpeg);
+ }
+ .favorites-cards #card-6{
+    background-image: url(/projectimages/soty.jpeg);
+ }
+
+ /* CODE TO ANIMATE ON SCROLL */
+@keyframes appear {
+  from{
+    opacity: 0;
+    scale: 0.5;
+  }
+  to{
+    opacity: 1;
+    scale: 1;
+  }
+}
+.new-release-cards, .trending-cards, .favorites-cards, .artist-cards{
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+/* ANIMATE ON SCROLL END */
+
+
+ /* FOOTER BEGINS */
+ footer{
+   background-color:#142850;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 90px;
+ }
+
+ .left-side{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ .left-side p{
+   color: #00A8CC;
+   font-size: 25px;
+ }
+ .left-side a{
+   color: #00A8CC;
+   font-family: Poppins;
+   font-size: 20px;
+   font-weight: 600;
+   text-decoration: none;
+   padding: 0 15px;
+ }
+ .left-side a:hover{
+   color: #f8ff6b;
+   transition: all ease-in-out 0.2s;
+ }
+ 
+ .right-side i{
+   color: #00A8CC;
+   font-family: Poppins;
+   font-size: 30px;
+   text-decoration: none;
+   padding: 0 10px;
+ }
+ .right-side i:hover{
+   color: #f8ff6b;
+   transition: all ease-in-out 0.2s;
+   cursor: pointer;
+ }
